@@ -11,7 +11,7 @@
   <style>
     :root{--sand:#E9CFAC;--sand-lt:#F5EBDA;--foam:#FAF5ED;--espresso:#1C1410;--coffee:#7B4A2D;--latte:#C49A6C;--outer:clamp(20px,5vw,64px)}
     *,*::before,*::after{box-sizing:border-box;-webkit-font-smoothing:antialiased}
-    html{scroll-behavior:smooth}
+    html{scroll-behavior:smooth;min-width:375px;overflow-x:hidden}
     body{margin:0;background:transparent;color:var(--espresso);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.5;overflow-x:hidden}
     .bg-grad{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 110% 55% at -8% 10%,rgba(233,207,172,.80) 0%,transparent 58%),radial-gradient(ellipse 70% 70% at 108% 18%,rgba(250,240,220,.75) 0%,transparent 52%),radial-gradient(ellipse 90% 50% at 55% 55%,rgba(245,235,210,.50) 0%,transparent 60%),radial-gradient(ellipse 65% 65% at 92% 88%,rgba(196,154,108,.45) 0%,transparent 50%),#FAF5ED}
     .grain{position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px}
@@ -126,6 +126,18 @@
 
     <div class="gallery-item visible" data-cat="wnetrze">
       <div class="photo-card">
+        <img src="zdjecia_na_strone/dziarski%20barista%205.png" alt="Dziarski Barista">
+      </div>
+    </div>
+
+    <div class="gallery-item visible" data-cat="jedzenie">
+      <div class="photo-card">
+        <img src="zdjecia_na_strone/jedzenie%20dziarski%203.png" alt="Jedzenie">
+      </div>
+    </div>
+
+    <div class="gallery-item visible" data-cat="wnetrze">
+      <div class="photo-card">
         <img src="zdjecia_na_strone/dziarski%20barista%20wnetrze%201.png" alt="Wnętrze kawiarni">
       </div>
     </div>
@@ -160,12 +172,6 @@
       </div>
     </div>
 
-    <div class="gallery-item visible" data-cat="jedzenie">
-      <div class="photo-card">
-        <img src="zdjecia_na_strone/jedzenie%20dziarski%203.png" alt="Jedzenie">
-      </div>
-    </div>
-
     <div class="gallery-item visible" data-cat="kawa">
       <div class="photo-card">
         <img src="zdjecia_na_strone/kawa%20dziarski%203.png" alt="Kawa">
@@ -184,15 +190,21 @@
       </div>
     </div>
 
-    <div class="gallery-item visible" data-cat="kawa">
+    <div class="gallery-item visible" data-cat="wnetrze">
       <div class="photo-card">
-        <img src="zdjecia_na_strone/kawa%20dziarski%205.png" alt="Kawa">
+        <img src="zdjecia_na_strone/wnetrze_kawa%203.png" alt="Wnętrze kawiarni">
       </div>
     </div>
 
     <div class="gallery-item visible" data-cat="wnetrze">
       <div class="photo-card">
-        <img src="zdjecia_na_strone/wnetrze_kawa%203.png" alt="Wnętrze kawiarni">
+        <img src="zdjecia_na_strone/dziarski%20barista%20wnetrze%203.png" alt="Wnętrze kawiarni">
+      </div>
+    </div>
+
+    <div class="gallery-item visible" data-cat="wnetrze">
+      <div class="photo-card">
+        <img src="zdjecia_na_strone/dziarski%20barista%20wnetrze%206.png" alt="Wnętrze kawiarni">
       </div>
     </div>
 

@@ -19,7 +19,7 @@
       --outer:   clamp(20px, 5vw, 64px);
     }
     *, *::before, *::after { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; min-width: 375px; overflow-x: hidden; }
     body { margin: 0; background: transparent; color: var(--espresso); font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; overflow-x: hidden; }
 
     .bg-grad { position: fixed; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(ellipse 110% 55% at -8% 10%, rgba(233,207,172,.80) 0%, transparent 58%), radial-gradient(ellipse 70% 70% at 108% 18%, rgba(250,240,220,.75) 0%, transparent 52%), radial-gradient(ellipse 90% 50% at 55% 55%, rgba(245,235,210,.50) 0%, transparent 60%), radial-gradient(ellipse 65% 65% at 92% 88%, rgba(196,154,108,.45) 0%, transparent 50%), radial-gradient(ellipse 80% 45% at 5% 95%, rgba(233,207,172,.55) 0%, transparent 55%), #FAF5ED; }
