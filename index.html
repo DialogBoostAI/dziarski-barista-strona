@@ -534,6 +534,16 @@
       .hero-bot-link:last-child { display: none; }
     }
 
+    /* ─── FAQ ACCORDION ───────────────────────────────── */
+    .faq-item { border-bottom: 1px solid rgba(28,20,16,.1); }
+    .faq-item:first-child { border-top: 1px solid rgba(28,20,16,.1); }
+    .faq-btn { width: 100%; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; text-align: left; gap: 20px; }
+    .faq-question { font-size: 16px; font-weight: 400; color: var(--espresso); }
+    .faq-icon { flex-shrink: 0; width: 22px; height: 22px; border: 1px solid rgba(28,20,16,.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: rgba(28,20,16,.5); transition: transform .3s cubic-bezier(.25,.46,.45,.94), background .2s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); background: rgba(28,20,16,.06); }
+    .faq-answer { overflow: hidden; max-height: 0; transition: max-height .4s cubic-bezier(.25,.46,.45,.94); }
+    .faq-answer-inner { padding: 0 0 20px; font-size: 15px; line-height: 1.7; color: rgba(28,20,16,.62); max-width: 680px; }
+
     /* ─── GALLERY MASONRY ─────────────────────────────── */
     .gal-item { break-inside: avoid; margin-bottom: 10px; }
     #galeria .gal-masonry .photo-card img { height: auto; object-fit: unset; }
@@ -873,6 +883,79 @@
 
   </div>
 
+</section>
+
+<!-- ═══════════════════════════ FAQ ══════════════════════════ -->
+<section style="padding:0 var(--outer) 120px;">
+  <div class="reveal" style="max-width:800px; margin:0 auto; padding-top:64px; border-top:1px solid rgba(28,20,16,.1);">
+
+    <p class="sec-label" style="margin:0 0 12px;">FAQ</p>
+    <h2 class="disp" style="font-size:clamp(30px,4vw,48px); font-weight:300; letter-spacing:-.03em; margin:0 0 48px; line-height:1.1;">Najczęstsze<br><em>pytania</em></h2>
+
+    <div id="faqList">
+
+      <div class="faq-item">
+        <button class="faq-btn" aria-expanded="false">
+          <span class="faq-question">Czy można u was zarezerwować stolik?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-answer-inner">Aktualnie nie prowadzimy systemu rezerwacji — działamy na zasadzie walk-in. W godzinach szczytu (8:00–10:00 i 12:00–14:00) bywa tłoczno, więc warto przyjść chwilę wcześniej lub po tłumach. W razie pytań możesz do nas zadzwonić na numer 664 020 948.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" aria-expanded="false">
+          <span class="faq-question">Czy jest parking w pobliżu?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-answer-inner">Tak — przy Galerii Rzeszów jest duży płatny parking, a wzdłuż ul. Matejki i okolicznych ulic można znaleźć miejsca parkingowe. Pierwsze 15 minut na większości parkingów strefowych jest bezpłatne. Przy wejściu do kawiarni mamy też stojaki rowerowe.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" aria-expanded="false">
+          <span class="faq-question">Czy obsługujecie zamówienia bezglutenowe?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-answer-inner">Nasze napoje są naturalnie bezglutenowe. Kanapki przygotowujemy na pieczywie pszennym — nie mamy dedykowanego pieczywa bezglutenowego, jednak przygotujemy dla Ciebie wersję bez chleba lub podamy składniki osobno. Powiedz nam o nietolerancji przy zamówieniu, a dostosujemy skład.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" aria-expanded="false">
+          <span class="faq-question">Czy mogę kupić u was ziarna kawy do domu?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-answer-inner">Tak! Sprzedajemy ziarna naszych aktualnych blendeów i single originów w paczce 250 g. Możemy też zmielić je na miejscu pod Twój sprzęt — powiedz czy masz ekspres kolbowy, drip, french press czy aeropress. Zapytaj o dostępność przy barze.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" aria-expanded="false">
+          <span class="faq-question">Czy macie program lojalnościowy?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-answer-inner">Tak — prowadzimy kartę stałego gościa. Kup 9 kaw, a 10. dostaniesz od nas. Karty dostępne przy barze, wystarczy poprosić baristę. Karta jest ważna bezterminowo i działa na wszystkie napoje z ekspresu.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" aria-expanded="false">
+          <span class="faq-question">Czy organizujecie wydarzenia lub szkolenia kawowe?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-answer-inner">Od czasu do czasu organizujemy warsztaty z parzenia kawy, cupping sessions i wieczory tematyczne. Informacje o nadchodzących wydarzeniach publikujemy na Instagramie i Facebooku — obserwuj nas, żeby nie przegapić. Możesz też napisać na nasz formularz kontaktowy z pytaniem o najbliższe terminy.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- ═══════════════════════════ GALLERY ═══════════════════════ -->
@@ -1252,6 +1335,25 @@
 
     prev.disabled = true; // initially at start
   })();
+
+  // ── FAQ accordion ──────────────────────────────────────────
+  document.querySelectorAll('.faq-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const answer = item.querySelector('.faq-answer');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(openItem => {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-answer').style.maxHeight = '0';
+        openItem.querySelector('.faq-btn').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
 
   // Mobile menu toggle
   const menuToggle = document.getElementById('menuToggle');
