@@ -161,6 +161,10 @@
       color: var(--espresso);
       animation: fadeUp .8s cubic-bezier(.25,.46,.45,.94) both;
     }
+    @media (min-width: 769px) {
+      .hero-brand { font-size: clamp(44px, 5.25vw, 88px); }
+      .hero-mascot { max-width: clamp(180px, 38vw, 480px); }
+    }
     .hero-top-cta {
       font-size: 12px; letter-spacing: .09em; text-transform: uppercase;
       font-weight: 500; color: var(--espresso);
