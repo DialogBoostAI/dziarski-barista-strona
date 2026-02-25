@@ -7,15 +7,15 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Mohave:wght@700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --sand:    #E9CFAC;
-      --sand-lt: #F5EBDA;
-      --foam:    #FAF5ED;
-      --espresso:#1C1410;
-      --coffee:  #7B4A2D;
-      --latte:   #C49A6C;
+      --sand:    #FFE400;
+      --sand-lt: #FFF5A0;
+      --foam:    #FFFDE7;
+      --espresso:#1C1C1C;
+      --coffee:  #8B7000;
+      --latte:   #D4B800;
       --outer:   clamp(20px, 5vw, 64px);
     }
 
@@ -43,12 +43,12 @@
       position: fixed; inset: 0; z-index: -1;
       pointer-events: none;
       background:
-        radial-gradient(ellipse 110% 55% at  -8% 10%, rgba(233,207,172,.80) 0%, transparent 58%),
-        radial-gradient(ellipse  70% 70% at 108% 18%, rgba(250,240,220,.75) 0%, transparent 52%),
-        radial-gradient(ellipse  90% 50% at  55% 55%, rgba(245,235,210,.50) 0%, transparent 60%),
-        radial-gradient(ellipse  65% 65% at  92% 88%, rgba(196,154,108,.45) 0%, transparent 50%),
-        radial-gradient(ellipse  80% 45% at   5% 95%, rgba(233,207,172,.55) 0%, transparent 55%),
-        #FAF5ED;
+        radial-gradient(ellipse 110% 55% at  -8% 10%, rgba(255,228,0,.75) 0%, transparent 58%),
+        radial-gradient(ellipse  70% 70% at 108% 18%, rgba(255,245,100,.65) 0%, transparent 52%),
+        radial-gradient(ellipse  90% 50% at  55% 55%, rgba(255,240,80,.40) 0%, transparent 60%),
+        radial-gradient(ellipse  65% 65% at  92% 88%, rgba(212,184,0,.40) 0%, transparent 50%),
+        radial-gradient(ellipse  80% 45% at   5% 95%, rgba(255,228,0,.50) 0%, transparent 55%),
+        #FFFDE7;
     }
 
     /* ─── GRAIN ─────────────────────────────────────── */
@@ -74,10 +74,10 @@
       transition: background .4s ease, backdrop-filter .4s ease;
     }
     .nav.scrolled {
-      background: rgba(250,245,237,.9);
+      background: rgba(255,253,231,.92);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(28,20,16,.06);
+      border-bottom: 1px solid rgba(28,28,28,.08);
     }
     .nav-brand {
       font-family: 'Cormorant Garamond', serif;
@@ -121,7 +121,7 @@
     /* ─── HERO ───────────────────────────────────────── */
     .hero {
       height: 100svh;
-      background: rgba(233,207,172,.78);
+      background: rgba(255,228,0,.88);
       position: relative; overflow: hidden;
       padding: 0;
     }
@@ -129,8 +129,8 @@
       content: '';
       position: absolute; inset: 0;
       background:
-        radial-gradient(ellipse 80% 60% at 25% 40%, rgba(250,245,237,.65) 0%, transparent 70%),
-        radial-gradient(ellipse 60% 80% at 75% 70%, rgba(196,154,108,.2) 0%, transparent 60%);
+        radial-gradient(ellipse 80% 60% at 25% 40%, rgba(255,253,200,.60) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 80% at 75% 70%, rgba(180,150,0,.15) 0%, transparent 60%);
       pointer-events: none;
     }
     .hero-layout {
@@ -149,12 +149,12 @@
     }
     .hero-brand {
       pointer-events: auto;
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Mohave', sans-serif;
       font-size: clamp(72px, 10.5vw, 175px);
-      font-weight: 400;
-      font-style: italic;
+      font-weight: 700;
+      font-style: normal;
       line-height: .88;
-      letter-spacing: -.04em;
+      letter-spacing: -.03em;
       margin: 0;
       color: var(--espresso);
       animation: fadeUp .8s cubic-bezier(.25,.46,.45,.94) both;
@@ -638,7 +638,7 @@
     <!-- center: mascot -->
     <div class="hero-mid">
       <img
-        src="brand_assets/labrador-removebg.png"
+        src="zdjecia_na_strone/Adobe_Express_-_file-ai-brush-removebg-ekzi81r9.png"
         alt="Dziarski Barista — maskotka"
         class="hero-mascot"
       >
@@ -998,7 +998,7 @@
 </section>
 
 <!-- ═══════════════════════════ MENU ══════════════════════════ -->
-<section id="menu" style="padding:120px var(--outer); background:rgba(233,207,172,.72);">
+<section id="menu" style="padding:120px var(--outer); background:rgba(255,228,0,.55);">
   <div style="max-width:960px; margin:0 auto;">
 
     <div class="reveal" style="text-align:center; margin-bottom:80px;">
