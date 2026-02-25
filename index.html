@@ -163,7 +163,6 @@
     }
     @media (min-width: 769px) {
       .hero-brand { font-size: clamp(44px, 5.25vw, 88px); }
-      .hero-mascot { max-width: clamp(180px, 38vw, 480px); }
     }
     .hero-top-cta {
       font-size: 12px; letter-spacing: .09em; text-transform: uppercase;
@@ -238,6 +237,9 @@
       max-width: clamp(240px, 76vw, 1000px);
       mix-blend-mode: multiply;
       animation: mascotIn .9s .1s cubic-bezier(.25,.46,.45,.94) both;
+    }
+    @media (min-width: 769px) {
+      .hero-mascot { max-width: clamp(120px, 19vw, 240px); }
     }
     /* bottom row: links spread */
     .hero-bot {
