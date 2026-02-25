@@ -226,16 +226,14 @@
     /* center: mascot */
     .hero-mid {
       display: flex; align-items: center; justify-content: center;
-      min-height: 0; overflow: hidden;
+      min-height: 0;
     }
     .hero-mascot {
       max-height: 100%;
       width: auto;
       max-width: clamp(240px, 76vw, 1000px);
-      filter: drop-shadow(0 24px 48px rgba(28,20,16,.12));
+      mix-blend-mode: multiply;
       animation: mascotIn .9s .1s cubic-bezier(.25,.46,.45,.94) both;
-      -webkit-mask-image: linear-gradient(to bottom, black 96%, transparent 99%);
-      mask-image: linear-gradient(to bottom, black 96%, transparent 99%);
     }
     /* bottom row: links spread */
     .hero-bot {
